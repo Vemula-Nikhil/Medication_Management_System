@@ -4,9 +4,18 @@ const {open} = require('sqlite');
 const sqlite3 = require('sqlite3').verbose();
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
+const cors = require('cors');
 
 const dbPath = path.join(__dirname, 'websiteLerners.db')
+
 const app = express();
+
+// Allow requests from your frontend origin
+app.use(cors({
+  origin: 'http://localhost:3000', // or '*' for public access
+  credentials: true
+}));
+
 
 app.use(express.json());
 
