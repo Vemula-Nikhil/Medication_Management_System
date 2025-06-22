@@ -4,9 +4,17 @@ const {open} = require('sqlite');
 const sqlite3 = require('sqlite3').verbose();
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
+const cors = require('cors');
 
 const dbPath = path.join(__dirname, 'websiteLerners.db')
+
 const app = express();
+
+app.use(cors({
+  origin: 'http://localhost:3000',
+  credentials: true
+}));
+
 
 app.use(express.json());
 
@@ -51,15 +59,17 @@ app.post("/signup", async (req, res) => {
           '${hashedPassword}', 
           '${role}'
         )`;
-    const dbResponse = await db.run(createUserQuery);
-    const newUserId = dbResponse.lastID;
+    await db.run(createUserQuery);
+    
     res.status(201);
     res.send({
-      message: `User registered successfully with userId : ${newUserId}`
+      message: 'User registered successfully'
     })
   } else {
     res.status = 400;
-    res.send("User already exists");
+    res.send({
+      error: "User already exists"
+    });
   }
 });
 

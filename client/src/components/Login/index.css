@@ -1,0 +1,95 @@
+.login-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: azure;
+}
+
+.login-form{
+    height: 350px;
+    width: 320px;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 8px;
+    border-color: cadetblue;
+    padding: 16px;
+    background-color: #ffffff;
+}
+
+.input-container{
+    margin-bottom: 8px;
+}
+
+.medicare-text{
+    text-align: center;
+    font-family: 'calibri';
+    font-size: 22px;
+    font-weight: 600;
+    color: #000000;
+}
+
+.input-label{
+    font-family: 'calibri';
+    font-size: 16px;
+    font-weight: 500;
+    color: #000000;
+    line-height: 1.6;
+    cursor: pointer;
+    outline: none;
+}
+
+.input-filed{
+    width: 100%;
+    height: 32px;
+    padding-left: 8px;
+    box-sizing: border-box;
+}
+
+.role-label{
+    margin-right: 20px;
+    font-family: 'calibri';
+    font-size: 16px;
+    font-weight: 500;
+    color: #000000;
+}
+
+.dropdown{
+    height: 28px;
+    width: 70px;
+    cursor: pointer;
+    outline: none;
+}
+
+.login-btn{
+    width: 100%;
+    height: 40px;
+    border-width: 0px;
+    background-color: cyan;
+    border-radius: 8px;
+    font-family: 'Calibri';
+    font-size: 16px;
+    color: #000000;
+    cursor: pointer;
+    outline: none;
+    margin-bottom: 10px;
+}
+
+.err-msg{
+    font-family: 'Calibri';
+    font-size: 12px;
+    color: red;
+}
+
+.signup-btn{
+    width: 100%;
+    height: 40px;
+    border-width: 0px;
+    background-color: red;
+    border-radius: 8px;
+    font-family: 'Calibri';
+    font-size: 16px;
+    color: #000000;
+    cursor: pointer;
+    outline: none;
+}

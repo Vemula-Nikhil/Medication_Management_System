@@ -1,0 +1,39 @@
+.signup-success-container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.success-msg{
+    font-size: 22px;
+    color: #000000;
+}
+
+.link-signin{
+    font-size: 22px;
+    color: blue;
+}
+
+.signup-form{
+    height: 300px;
+    width: 320px;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 8px;
+    border-color: cadetblue;
+    padding: 16px;
+    background-color: #ffffff;
+}
+
+.link-signin{
+    margin-left: 10px;
+    text-decoration: underline;
+    color: blue;
+}
+
+.return-login{
+    border: none;
+    font-size: 16px;
+    color: blue;
+}
